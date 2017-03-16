@@ -58,6 +58,61 @@ public class CalculatorViewController implements Initializable {
         
         equationDisplay.setText(formatNumberStack());
         overWriteDisplay=true;
+        
+        //update the result
+        display.setText(Double.toString(calculateStack()));
+    }
+    
+    /**
+     * This method will parse the numberStack and return the
+     * value of performing all the calculations
+     */
+    public double calculateStack()
+    {
+        double result = 0;
+        double num1 = 0;
+        
+        //get the first number in the stack
+        if (!numberStack.isEmpty())
+        {
+            num1 = Double.parseDouble(numberStack.get(0));
+            double num2;
+            String operator = "=";
+        
+            for (int i=1; i < numberStack.size(); i++ )
+            {
+                String element = numberStack.get(i);
+                
+                //check if the element is a number of an operator
+                if (element.matches("[0-9]"))
+                {
+                    num2 = Double.parseDouble(element);
+                    result = calculate(num1, operator, num2);
+                    num1 = result;
+                }
+                else
+                    operator = element;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * This method accepts 2 numbers and performs the math between them based
+     * on the operator
+     */
+    public double calculate(double num1, String operator, double num2)
+    {
+        if (operator.equals("+"))
+            return num1+num2;
+        else if (operator.equals("-"))
+            return num1-num2;
+        else if (operator.equals("*"))
+            return num1*num2;
+        else if (operator.equals("/"))
+            return num1/num2;
+        else
+            return 0;
     }
     
     
