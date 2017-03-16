@@ -34,82 +34,82 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="sevenButton" mnemonicParsing="false" text="7">
+            <Button fx:id="sevenButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="7">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="eightButton" mnemonicParsing="false" text="8" GridPane.columnIndex="1">
+            <Button fx:id="eightButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="8" GridPane.columnIndex="1">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="nineButton" mnemonicParsing="false" text="9" GridPane.columnIndex="2">
+            <Button fx:id="nineButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="9" GridPane.columnIndex="2">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="divideButton" mnemonicParsing="false" text="/" GridPane.columnIndex="3">
+            <Button fx:id="divideButton" mnemonicParsing="false" onAction="#operatorButtonPushed" text="/" GridPane.columnIndex="3">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="fourButton" mnemonicParsing="false" text="4" GridPane.rowIndex="1">
+            <Button fx:id="fourButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="4" GridPane.rowIndex="1">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="fiveButton" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="fiveButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="sixButton" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="sixButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="multiplyButton" mnemonicParsing="false" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button fx:id="multiplyButton" mnemonicParsing="false" onAction="#operatorButtonPushed" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="oneButton" mnemonicParsing="false" text="1" GridPane.rowIndex="2">
+            <Button fx:id="oneButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="1" GridPane.rowIndex="2">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="twoButton" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="twoButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="threeButton" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="threeButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="minusButton" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button fx:id="minusButton" mnemonicParsing="false" onAction="#operatorButtonPushed" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="zeroButton" mnemonicParsing="false" text="0" GridPane.rowIndex="3">
+            <Button fx:id="zeroButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="0" GridPane.rowIndex="3">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="decimalButton" mnemonicParsing="false" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="decimalButton" mnemonicParsing="false" onAction="#numberButtonPushed" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="equalsButton" mnemonicParsing="false" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button fx:id="equalsButton" mnemonicParsing="false" onAction="#operatorButtonPushed" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="plusButton" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button fx:id="plusButton" mnemonicParsing="false" onAction="#operatorButtonPushed" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font name="Monospaced Regular" size="24.0" />
                </font>

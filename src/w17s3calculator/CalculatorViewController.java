@@ -6,6 +6,7 @@
 package w17s3calculator;
 
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -59,8 +60,19 @@ public class CalculatorViewController implements Initializable {
         equationDisplay.setText(formatNumberStack());
         overWriteDisplay=true;
         
+        //because the setText method does not play nicely with decimals and trailing
+        //zeros, we can set a specific format
+        DecimalFormat formatWithoutTrailingZeros = new DecimalFormat("0.####");
+        
         //update the result
-        display.setText(Double.toString(calculateStack()));
+        display.setText(formatWithoutTrailingZeros.format(calculateStack()));
+        
+        // if the user hits equals, clear out the history and update the display
+        if (operator.equals("="))
+        {
+            numberStack= new ArrayList<>();
+            equationDisplay.setText("");
+        }
     }
     
     /**
